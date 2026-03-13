@@ -17,7 +17,7 @@ if not OLLAMA_API_KEY:
     raise RuntimeError("OLLAMA_API_KEY is not set. Please add it to your .env file.")
 
 app = FastAPI(title="Magic Translator")
-MODEL = "gemini-3-flash-preview"
+MODEL = "deepseek-v3.1:671b"
 client = Client(
     host="https://ollama.com",
     headers={'Authorization': 'Bearer ' + OLLAMA_API_KEY}
